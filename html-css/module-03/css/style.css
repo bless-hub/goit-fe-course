@@ -1,0 +1,59 @@
+html {
+    box-sizing: border-box;
+} 
+*,
+*::before, 
+*::after {
+    box-sizing: inherit;
+}
+nav {
+    height: 50px;
+    margin-top: 50px;
+}
+/*.main {
+    width: 960px;
+    margin: 0 auto;} */
+
+.container {
+    width: 902px;
+    margin: 0 auto;
+}
+
+
+.navigation {
+    font-size: 14px;
+    list-style: none;
+
+}
+.navigation li {
+    display: inline-block;
+    margin-left: 50px;
+
+}
+.navigation li:not(:last-child){
+    margin-right: 60px;
+
+}
+.navigation a {
+    color: grey;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 16px;
+}
+.navigation a:hover,
+.navigation a:focus {
+    color: aquamarine;
+}
+.future-list-item {
+    display: inline-block;
+    width: 421px;
+    margin-right: 50px;
+}
+.future-list-item:nth-child(2n) {
+    margin-right: 0;
+}
+.future-list {
+    margin: 0;
+    padding: 0;
+}
