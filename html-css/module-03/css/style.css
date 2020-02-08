@@ -9,8 +9,7 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;  
 }
 nav {
     margin: 50px;
@@ -73,20 +72,18 @@ li img {
     margin-right: 60px;
     margin-bottom: 130px;
 }
-
 .future-list-item:nth-child(2n) {
     margin-right: 0;
 }
 .future-list-item:nth-last-child(-n+2){
     margin-bottom: 0;
 }
-.future-list-item p {
+p {
     font-size: 14px;
     font-family: 'Playfair Display', serif;
     color: #626262;
    /* padding-left: 0;*/
     text-align: justify;
-    margin-bottom: 60px;
 }
 .container h2 {
     margin-top: 30px;
@@ -113,6 +110,7 @@ div.bottom {
     align-items: center;
     justify-content: center;
     margin-bottom: 60px;
+    margin-top: 60px    ;
 
 }
 .load {
