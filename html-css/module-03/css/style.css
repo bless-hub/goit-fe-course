@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display|Ubuntu:300&display=swap");
 /*html {
     box-sizing: border-box;
 } 
@@ -12,8 +13,9 @@
   box-sizing: border-box;
 }*/
 nav {
-  margin: 50px;
-  text-align: center;
+  padding-top: 75px;
+  margin: 0 auto;
+  width: 580px;
 }
 /*.main {
     width: 960px;
@@ -33,7 +35,6 @@ li img {
 .navigation {
   font-size: 14px;
   list-style: none;
-  margin-top: 77px;
   margin-bottom: 100px;
 }
 .navigation li {
@@ -62,7 +63,6 @@ li img {
   font-size: 0;
   margin: 0;
   padding: 0;
-  list-style: 0;
 }
 .future-list-item {
   display: inline-block;
@@ -104,11 +104,11 @@ p {
 }
 
 div.bottom {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 60px;
-  margin-top: 60px;
+  margin: 0 auto;
+  width: 164px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  
 }
 .load {
   width: 165px;

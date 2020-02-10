@@ -5,6 +5,7 @@
 
 .pagenav {
     margin-top: 35px;
+    margin-bottom: 105px;
 }
 .logo {
   text-decoration: none;
@@ -25,6 +26,10 @@
     padding: 0;
     margin-top: 7px;
 }
+.navbar a:hover,
+.navbar a:focus {
+    color: #1abc9c;
+}
 .navbar a {
   /*  line-height: 16px;
     display: block;*/
@@ -39,3 +44,27 @@
     float: left;
     padding-left: 35px;
 }
+h1 {
+    font-size: 48px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    position: inherit;
+    text-align: center;
+    color: #515151;
+}
+
+img.line {
+display: block;
+margin-left: auto;
+margin-right: auto;
+    
+}
+/*main item*/
+
+.list-item {
+    float: left;
+    padding-right: 30px;
+    list-style: none;
+    background-image: #e9f0fd;
+}
+
