@@ -1,23 +1,36 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,600,700|Roboto:300,900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    /*box-sizing: border-box;*/
+}
+
 .container {
-  width: 1110px;
-  margin: 0 auto;
+    width: 1140px;
+    margin: 0 auto;
 }
 
 .pagenav {
-    margin-top: 35px;
+    padding-top: 35px;
     margin-bottom: 105px;
 }
+
 .logo {
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 30px;
-  font-family: "Roboto", sans-serif;
-  color: #555252;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+    color: #555252;
+    display: block;
+    float: left;
 }
-.logo a::first-letter {
-  color: #1abc9c;
-  font-weight: bold;
+
+a.logo::first-letter {
+    color: #1abc9c;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
 }
+
 .navbar {
     list-style: none;
     width: 600px;
@@ -26,45 +39,187 @@
     padding: 0;
     margin-top: 7px;
 }
+
 .navbar a:hover,
 .navbar a:focus {
     color: #1abc9c;
 }
+
 .navbar a {
-  /*  line-height: 16px;
+    /*  line-height: 16px;
     display: block;*/
     text-decoration: none;
     font-size: 14px;
     text-transform: uppercase;
     color: #0f0101;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: bold;
 }
+
+h2.featured_heading {
+    font-size: 48px;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: #515151;
+    margin-bottom: 80px;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 170px;
+    height: 7px;
+    background-color: #1abc9c;
+    margin: 20px auto 0;
+}
+
 .navbar li {
     float: left;
     padding-left: 35px;
 }
-h1 {
-    font-size: 48px;
-    font-family: 'Roboto', sans-serif;
-    text-transform: uppercase;
-    position: inherit;
-    text-align: center;
-    color: #515151;
-}
 
-img.line {
-display: block;
-margin-left: auto;
-margin-right: auto;
-    
-}
-/*main item*/
 
-.list-item {
-    float: left;
-    padding-right: 30px;
+/*feautered product*/
+
+.catalog-list {
     list-style: none;
-    background-image: #e9f0fd;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 100px;
 }
 
+.catalog-item {
+    outline: 2px #1abc9c solid;
+    width: 255px;
+    height: 320px;
+    float: left;
+    margin: 0;
+    padding: 0;
+    background-color: #e9f0fd;
+}
+
+.catalog-item:not(:nth-child(4n)) {
+    margin-right: 30px;
+}
+
+.catalog-item:not(:nth-last-child(-n + 4)) {
+    margin-bottom: 30px;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.catalog-item img {
+    display: block;
+}
+
+.catalog-item h3 {
+    outline: 2px blueviolet solid;
+    width: 200px;
+    float: left;
+    height: 40px;
+    background-color: #323232;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    line-height: 40px;
+}
+
+.product-price h3 {
+    float: right;
+    width: 55px;
+    height: 40px;
+    outline: 2px blue solid;
+    background-color: #8c8c8c;
+    color: #ffffff;
+    line-height: 40px;
+}
+
+
+/*latest news*/
+
+h2.news_heading {
+    font-size: 48px;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: #555252;
+    margin-bottom: 80px;
+}
+
+.news {
+    list-style: none;
+}
+
+.news-list {
+    width: 350px;
+    float: left;
+    margin-bottom: 50px;
+}
+
+.news-list:not(:nth-child(3n)) {
+    margin-right: 30px;
+}
+
+.news-list img {
+    margin-bottom: 15px;
+    max-width: 100%;
+    height: auto;
+}
+
+h4 {
+    font-size: 18px;
+    font-family: "open sans", serif;
+    font-weight: 600;
+    color: #555252;
+}
+
+h4::after {
+    content: "";
+    display: block;
+    width: 135px;
+    height: 3px;
+    background-color: #1abc9c;
+    margin: 15px 0 auto;
+    margin-bottom: 30px;
+}
+
+p.title {
+    font-family: "open sans", sans-serif;
+    font-size: 14px;
+    font-weight: regular;
+    color: #555252;
+    text-align: justify;
+    overflow: hidden;
+    line-height: 1.5;
+    height: 70px;
+}
+
+a.button {
+    width: 160px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    background-color: #4ec6ab;
+    font-family: "Open Sans", serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.image {
+    width: 350px;
+    height: 260px;
+    outline: 5px blue solid;
+}
+
+img.size {
+    width: 500px;
+}
