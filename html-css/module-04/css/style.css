@@ -172,7 +172,6 @@ h2.news_heading {
   padding: 0;
   float: left;
   margin-bottom: 50px;
-  outline: 5px indianred solid;
 }
 
 .news-list:not(:nth-child(3n)) {
@@ -226,7 +225,6 @@ a.button {
   width: 350px;
   height: 260px;
   margin: 0;
-  outline: 5px blue solid;
   margin-bottom: 15px;
   position: relative;
 }
@@ -235,4 +233,5 @@ a.button {
   display: block;
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
