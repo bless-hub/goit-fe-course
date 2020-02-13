@@ -101,6 +101,13 @@ h2::after {
   padding: 0;
   background-color: #e9f0fd;
 }
+a:hover h3 {
+  background-color: #1abc9c;
+}
+
+a:hover span {
+  background-color: #7fd9c7;
+}
 
 .catalog-item:not(:nth-child(4n)) {
   margin-right: 30px;
