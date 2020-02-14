@@ -233,6 +233,27 @@ a.button {
   color: #ffffff;
   border-radius: 5px;
 }
+#layer1 {
+  position: relative;
+  z-index: 1;
+}
+
+#layer2 {
+  position: relative;
+  z-index: 3;
+}
+
+#layer3 {
+  position: relative;
+  z-index: 2;
+  right: 160px;
+  bottom: 40px;
+  font-size: 48px;
+  font-family: "roboto", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #555252;
+}
 
 .image {
   width: 350px;
