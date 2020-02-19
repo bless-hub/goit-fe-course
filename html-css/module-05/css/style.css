@@ -1,18 +1,30 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,600,700|Roboto:300,900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
-  /*box-sizing: border-box;*/
+  box-sizing: border-box;
+}
+body {
+  width: 1600px;
+}
+.page-header {
+  height: 90px;
 }
 
 .container {
   width: 1140px;
   margin: 0 auto;
 }
+.maincontain {
+  background: #e9f0fd;
+  margin: 0;
+  padding: 0;
+}
 
 .pagenav {
   padding-top: 35px;
-  margin-bottom: 105px;
+  margin-bottom: 40px;
 }
 
 .logo {
@@ -27,7 +39,7 @@
 
 a.logo::first-letter {
   color: #1abc9c;
-  font-weight: bold;
+  font-weight: 300;
   font-family: "Roboto", sans-serif;
 }
 
@@ -58,4 +70,222 @@ a.logo::first-letter {
 .navbar li {
   float: left;
   padding-left: 35px;
+}
+
+/*banner*/
+.banner {
+  position: relative;
+  display: block;
+  margin-bottom: 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+  min-height: 600px;
+  list-style: none;
+}
+.slide img {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.slideleft {
+  width: 105px;
+  height: 105px;
+  display: inline-block;
+  border: none;
+  background-color: #1abc9c;
+  position: absolute;
+  background-image: url(/module-05/images/left.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 65%;
+}
+.slidecontent {
+  position: absolute;
+  display: inline;
+  font-size: 60px;
+  color: #fff;
+  text-transform: uppercase;
+  margin: auto;
+  top: 40%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  text-align: center;
+  font-family: "roboto";
+}
+.slideright {
+  width: 105px;
+  height: 105px;
+  display: inline-block;
+  border: none;
+  background-color: #1abc9c;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 65%;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+
+  background-image: url(/module-05/images/right.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.banertxt {
+  display: inline-block;
+  position: absolute;
+  font-family: "roboto", serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 24px;
+  color: #fff;
+  margin: auto;
+  top: 53%;
+  left: 0;
+  bottom: 0;
+  right: 25%;
+  text-align: center;
+}
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+h2.new_collection {
+  font-size: 48px;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: #515151;
+  margin-bottom: 40px;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 170px;
+  height: 7px;
+  background-color: #1abc9c;
+  margin: 20px auto 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.card {
+  outline: 2px blue solid;
+  width: 255px;
+  position: relative;
+}
+
+.card-bottom1 {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  outline: 2px blue solid;
+  position: absolute;
+  background-image: url(/module-05/images/heart.png);
+  background-color: transparent;
+}
+.card-list {
+  list-style: none;
+}
+.new {
+  background-color: #4b69a0;
+}
+a.heart {
+  width: 50px;
+  height: 50px;
+  outline: 2px #fff solid;
+  display: inline-block;
+}
+.topimg {
+  width: auto;
+  height: 280px;
+  position: relative;
+  display: block;
+}
+.product-name h3 {
+  width: 200px;
+  float: left;
+  background-color: #323232;
+  text-transform: uppercase;
+  color: #ffffff;
+  line-height: 40px;
+  font-family: "roboto", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+.price {
+  float: left;
+  font-size: 18px;
+  width: 55px;
+  height: 40px;
+  background-color: #8c8c8c;
+  color: #ffffff;
+  line-height: 40px;
+  text-align: center;
+  font-family: "roboto", sans-serif;
+  font-weight: 600;
+}
+.catalog-item {
+  width: 255px;
+  height: 320px;
+  float: left;
+  margin: 0;
+  padding: 0;
+  background-color: #e9f0fd;
+  margin-bottom: 100px;
+}
+.catalog-item:not(:nth-child(4n)) {
+  margin-right: 30px;
+}
+
+.footer {
+  width: 1600px;
+  height: 90px;
+  background-color: #323232;
+  display: inline-block;
+}
+.footer-text {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+
+  width: 1600px;
+
+  text-align: center;
+  line-height: 80px;
+}
+.nametheme {
+  color: #46bfa9;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
 }
