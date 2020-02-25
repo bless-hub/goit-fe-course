@@ -198,7 +198,7 @@ img {
   top: 80px;
   left: 35px;
   display: block;
-  outline: 2px #ffffff solid;
+  outline: 1px #ffffff solid;
   position: absolute;
   background-image: url(/module-05/images/heart.png);
   background-repeat: no-repeat;
@@ -214,7 +214,7 @@ img {
   top: 80px;
   left: 95px;
   display: block;
-  outline: 2px #ffffff solid;
+  outline: 1px #ffffff solid;
   position: absolute;
   background-image: url(/module-05/images/arrows.png);
   background-repeat: no-repeat;
@@ -226,7 +226,7 @@ img {
   top: 80px;
   right: 35px;
   display: block;
-  outline: 2px #ffffff solid;
+  outline: 1px #ffffff solid;
   position: absolute;
   background-image: url(/module-05/images/clock.png);
   background-repeat: no-repeat;
@@ -238,7 +238,7 @@ img {
   top: 138px;
   left: 35px;
   display: block;
-  outline: 2px #ffffff solid;
+  outline: 1px #ffffff solid;
   position: absolute;
   background-image: url(/module-05/images/basket.png);
   background-repeat: no-repeat;
