@@ -94,7 +94,7 @@ a.logo::first-letter {
   display: block;
   border: none;
 
-  background-image: url(/module-05/images/left.png);
+  background-image: url(../images/left.png);
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
@@ -124,7 +124,7 @@ a.logo::first-letter {
   position: absolute;
   right: 15%;
   top: 40%;
-  background-image: url(/module-05/images/right.png);
+  background-image: url(../images/right.png);
   background-repeat: no-repeat;
   background-position: center;
 }
