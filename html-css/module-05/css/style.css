@@ -35,11 +35,12 @@ body {
   color: #555252;
   display: block;
   float: left;
+  font-weight: 300;
 }
 
 a.logo::first-letter {
   color: #1abc9c;
-  font-weight: 300;
+  font-weight: 900;
   font-family: "Roboto", sans-serif;
 }
 
@@ -74,62 +75,55 @@ a.logo::first-letter {
 
 /*banner*/
 .banner {
-  position: relative;
   display: block;
   margin-bottom: 100px;
-  background-color: rgba(0, 0, 0, 0.5);
   min-height: 600px;
   list-style: none;
+  position: relative;
 }
-.slide img {
-  background-color: rgba(0, 0, 0, 1);
+.bannerover {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 
 .slideleft {
   width: 105px;
   height: 105px;
-  display: inline-block;
+  display: block;
   border: none;
-  background-color: #1abc9c;
-  position: absolute;
+
   background-image: url(/module-05/images/left.png);
   background-repeat: no-repeat;
   background-position: center;
-  margin: auto;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 65%;
+  position: absolute;
+  left: 15%;
+  top: 40%;
+}
+.hov:hover {
+  background-color: #1abc9c;
 }
 .slidecontent {
   position: absolute;
-  display: inline;
+  display: block;
   font-size: 60px;
   color: #fff;
   text-transform: uppercase;
-  margin: auto;
-  top: 40%;
-  left: 0;
-  bottom: 0;
-  right: 0;
-
-  text-align: center;
+  left: 50%;
+  top: 50%;
+  font-weight: 900;
   font-family: "roboto";
+  transform: translateX(-50%) translateY(-100%);
 }
 .slideright {
   width: 105px;
   height: 105px;
   display: inline-block;
   border: none;
-  background-color: #1abc9c;
   position: absolute;
-  margin: auto;
-  top: 0;
-  left: 65%;
-  bottom: 0;
-  right: 0;
-  text-align: center;
-
+  right: 15%;
+  top: 40%;
   background-image: url(/module-05/images/right.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -142,35 +136,13 @@ a.logo::first-letter {
   font-weight: 300;
   font-size: 24px;
   color: #fff;
-  margin: auto;
-  top: 53%;
-  left: 0;
-  bottom: 0;
-  right: 25%;
+
+  left: 26%;
+  top: 52%;
+
   text-align: center;
 }
 
-/*
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-*/
 h2.new_collection {
   font-size: 48px;
   font-family: "Roboto", sans-serif;
@@ -188,6 +160,11 @@ h2::after {
   background-color: #1abc9c;
   margin: 20px auto 0;
 }
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 img {
   display: block;
@@ -195,38 +172,95 @@ img {
   height: auto;
 }
 
-.card {
-  outline: 2px blue solid;
-  width: 255px;
-  position: relative;
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 95%;
+  height: 95%;
+  overflow: auto;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  opacity: 0;
+
+  transition: 0.25s ease-out;
+  transition-delay: 0.35s;
+}
+.topimg:hover .overlay {
+  opacity: 1;
 }
 
-.card-bottom1 {
+.icon-heart {
   width: 50px;
   height: 50px;
-  display: inline-block;
-  padding: 0;
-  margin: 0;
-  outline: 2px blue solid;
+  top: 80px;
+  left: 35px;
+  display: block;
+  outline: 2px #ffffff solid;
   position: absolute;
   background-image: url(/module-05/images/heart.png);
-  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
 }
+.iconhover:hover {
+  background-color: #1abc9c;
+}
+
+.icon-arrows {
+  width: 50px;
+  height: 50px;
+  top: 80px;
+  left: 95px;
+  display: block;
+  outline: 2px #ffffff solid;
+  position: absolute;
+  background-image: url(/module-05/images/arrows.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon-clock {
+  width: 50px;
+  height: 50px;
+  top: 80px;
+  right: 35px;
+  display: block;
+  outline: 2px #ffffff solid;
+  position: absolute;
+  background-image: url(/module-05/images/clock.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon-basket {
+  width: 172px;
+  height: 50px;
+  top: 138px;
+  left: 35px;
+  display: block;
+  outline: 2px #ffffff solid;
+  position: absolute;
+  background-image: url(/module-05/images/basket.png);
+  background-repeat: no-repeat;
+  background-position-x: 15px;
+  background-position-y: 10px;
+  background-color: #323232;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "open sans", sans-serif;
+  text-align: center;
+  padding-left: 35px;
+  line-height: 50px;
+}
+
 .card-list {
   list-style: none;
 }
-.new {
-  background-color: #4b69a0;
-}
-a.heart {
-  width: 50px;
-  height: 50px;
-  outline: 2px #fff solid;
-  display: inline-block;
-}
+
 .topimg {
   width: auto;
-  height: 280px;
   position: relative;
   display: block;
 }
@@ -265,6 +299,20 @@ a.heart {
 .catalog-item:not(:nth-child(4n)) {
   margin-right: 30px;
 }
+.catalog-item:hover h3 {
+  background-color: #1abc9c;
+}
+
+.catalog-item:hover .price {
+  background-color: #7fd9c2;
+}
+
+a.topimg:hover::after {
+  opacity: 0.5;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* footer --- */
 
 .footer {
   width: 1600px;
@@ -277,9 +325,7 @@ a.heart {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 16px;
-
   width: 1600px;
-
   text-align: center;
   line-height: 80px;
 }
