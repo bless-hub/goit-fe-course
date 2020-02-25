@@ -200,7 +200,7 @@ img {
   display: block;
   outline: 1px #ffffff solid;
   position: absolute;
-  background-image: url(../module-05/images/heart.png);
+  background-image: url(../images/heart.png);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -216,7 +216,7 @@ img {
   display: block;
   outline: 1px #ffffff solid;
   position: absolute;
-  background-image: url(/module-05/images/arrows.png);
+  background-image: url(../images/arrows.png);
   background-repeat: no-repeat;
   background-position: center;
 }
