@@ -200,7 +200,7 @@ img {
   display: block;
   outline: 1px #ffffff solid;
   position: absolute;
-  background-image: url(/module-05/images/heart.png);
+  background-image: url(../module-05/images/heart.png);
   background-repeat: no-repeat;
   background-position: center;
 }
