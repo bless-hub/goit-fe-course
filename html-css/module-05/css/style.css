@@ -184,9 +184,6 @@ img {
   right: 0;
   position: absolute;
   opacity: 0;
-
-  transition: 0.25s ease-out;
-  transition-delay: 0.35s;
 }
 .topimg:hover .overlay {
   opacity: 1;
