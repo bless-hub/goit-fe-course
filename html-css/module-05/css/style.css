@@ -228,7 +228,7 @@ img {
   display: block;
   outline: 1px #ffffff solid;
   position: absolute;
-  background-image: url(../module-05/images/clock.png);
+  background-image: url(..gitpush/module-05/images/clock.png);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -240,7 +240,7 @@ img {
   display: block;
   outline: 1px #ffffff solid;
   position: absolute;
-  background-image: url(../module-05/images/basket.png);
+  background-image: url(../images/basket.png);
   background-repeat: no-repeat;
   background-position-x: 15px;
   background-position-y: 10px;
