@@ -27,6 +27,7 @@
 }
 .navmenu {
   list-style: none;
+  margin-bottom: 115px;
 }
 
 .navmenu a {
@@ -56,4 +57,34 @@
   content: "";
   display: table;
   clear: both;
+}
+/*section 1*/
+
+.firsthead {
+  margin: 0 auto;
+  display: block;
+  outline: 2px violet solid;
+  text-align: center;
+}
+h2 {
+  font-size: 24px;
+  font-family: "Kaushan script";
+  font-weight: 400;
+}
+h2::first-letter {
+  text-transform: uppercase;
+}
+h2::after {
+  content: "";
+  display: block;
+  background-color: #f38181;
+  width: 60px;
+  height: 2px;
+  margin: 40px auto 0;
+}
+.heading {
+  font-family: "Montserrat";
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 500;
 }
