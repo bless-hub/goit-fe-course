@@ -5,9 +5,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  width: 1600px;
-}
+
 .page-header {
   height: 90px;
 }
@@ -312,17 +310,14 @@ a.topimg:hover::after {
 /* footer --- */
 
 .footer {
-  width: 1600px;
   height: 90px;
   background-color: #323232;
-  display: inline-block;
 }
 .footer-text {
   color: #fff;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 16px;
-  width: 1600px;
   text-align: center;
   line-height: 80px;
 }
