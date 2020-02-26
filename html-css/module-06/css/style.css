@@ -69,11 +69,15 @@ h2 {
   font-size: 24px;
   font-family: "Kaushan script";
   font-weight: 400;
-  margin-bottom: 70px;
+  margin-bottom: 60px;
 }
 h2::first-letter {
   text-transform: uppercase;
 }
+h2:last-of-type {
+  margin-bottom: 40px;
+}
+
 h2::after {
   content: "";
   display: block;
@@ -130,4 +134,35 @@ h3 {
   font-size: 15px;
   font-weight: 400;
   color: #999999;
+}
+
+/*section 2 */
+
+.lorem {
+  text-align: center;
+  width: 980px;
+  margin: 0 auto;
+  font-family: "Roboto";
+  font-weight: 400;
+  color: #999999;
+  font-size: 15px;
+  margin-bottom: 90px;
+}
+
+.team-list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.stafimg img {
+  width: 380px;
+  height: 470px;
+  object-fit: cover;
+  display: block;
+}
+
+.teamstaf:not(:nth-child(3n)) {
+  margin-right: 30px;
 }
