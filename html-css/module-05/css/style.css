@@ -97,11 +97,13 @@ a.logo::first-letter {
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
+  background-color: #1abc9c;
+  opacity: 0.5;
   left: 10%;
   top: 30%;
 }
 .hov:hover {
-  background-color: #1abc9c;
+  opacity: 1;
 }
 .slidecontent {
   position: absolute;
@@ -127,6 +129,8 @@ a.logo::first-letter {
   background-image: url(../images/right.png);
   background-repeat: no-repeat;
   background-position: center;
+  background-color: #1abc9c;
+  opacity: 0.5;
 }
 .banertxt {
   display: inline-block;
