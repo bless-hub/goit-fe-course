@@ -44,7 +44,7 @@ a.logo::first-letter {
 
 .navbar {
   list-style: none;
-  width: 600px;
+  width: 540px;
   float: right;
   margin: 0;
   padding: 0;
@@ -67,8 +67,10 @@ a.logo::first-letter {
   font-weight: bold;
 }
 .navbar li {
-  float: left;
-  padding-left: 35px;
+  float: right;
+}
+.navbar li:not(:nth-child(6n)) {
+  margin-left: 35px;
 }
 
 /*banner*/
@@ -95,7 +97,7 @@ a.logo::first-letter {
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
-  left: 5%;
+  left: 10%;
   top: 30%;
 }
 .hov:hover {
@@ -120,7 +122,7 @@ a.logo::first-letter {
   display: inline-block;
   border: none;
   position: absolute;
-  right: 5%;
+  right: 10%;
   top: 30%;
   background-image: url(../images/right.png);
   background-repeat: no-repeat;
