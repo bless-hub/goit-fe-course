@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Montserat";
+  src: url("../fonts/montserrat-v14-latin-700.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Montserat";
+  src: url("../fonts/montserrat-v14-latin-regular.woff") format("woff");
+  font-style: normal;
+  font-variant: 400;
+}
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+/*---------------- header ----------------*/
+
+.heading {
+  display: flex;
+  padding-top: 50px;
+  justify-content: space-between;
+  margin-bottom: 125px;
+}
+.navmenu {
+  list-style: none;
+  display: flex;
+}
+a.logo {
+  text-decoration: none;
+  font-size: 26px;
+}
+.navmenu a {
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Montserat";
+  color: #222222;
+  margin-left: 40px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.navmenu a:hover {
+  color: #fed136;
+}
+
+/* ----------section 1 ----------*/
+
+h2 {
+  text-align: center;
+}
+.underheading {
+  text-align: center;
+}
