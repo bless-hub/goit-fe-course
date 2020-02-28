@@ -14,7 +14,25 @@
   font-family: "Montserat";
   src: url("../fonts/montserrat-v14-latin-regular.woff") format("woff");
   font-style: normal;
-  font-variant: 400;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Cambay";
+  src: url("../fonts/cambay-v6-latin-italic.woff2") format("woff2");
+  font-style: italic;
+}
+@font-face {
+  font-family: "robotoslab";
+  src: url("../fonts/roboto-slab-v11-latin-regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "architect";
+  src: url("../fonts/architects-daughter-v10-latin-regular.woff2")
+    format("woff2");
+  font-style: normal;
+  font-weight: 400;
 }
 .container {
   width: 940px;
@@ -28,6 +46,7 @@
   padding-top: 50px;
   justify-content: space-between;
   margin-bottom: 125px;
+  align-items: center;
 }
 .navmenu {
   list-style: none;
@@ -35,7 +54,10 @@
 }
 a.logo {
   text-decoration: none;
-  font-size: 26px;
+  font-size: 35px;
+  font-family: "architect";
+  text-transform: capitalize;
+  color: #fed136;
 }
 .navmenu a {
   text-decoration: none;
@@ -54,7 +76,159 @@ a.logo {
 
 h2 {
   text-align: center;
+  font-family: "Montserat";
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
-.underheading {
+
+h2.twoheading {
+  color: #ffffff;
+  padding-top: 110px;
+}
+
+.sub-title {
   text-align: center;
+  margin-bottom: 80px;
+  font-family: "Cambay";
+  color: #777777;
+  font-size: 16px;
+}
+
+h3 {
+  font-size: 18px;
+  font-family: "Montserat";
+  text-transform: capitalize;
+  font-weight: 700;
+  color: rgb(34, 34, 34);
+}
+
+.description {
+  font-size: 14px;
+  font-family: "robotoslab" sans-serif;
+  color: #777777;
+}
+
+.servicecontent {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  margin-bottom: 120px;
+}
+
+.backborder-commerce {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px #fed136 solid;
+  background-image: url(../images/icon-basket.png);
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-position: center;
+}
+.backborder-web {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px #fed136 solid;
+  background-image: url(../images/icon-v.png);
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-position: center;
+}
+.backborder-security {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px #fed136 solid;
+  background-image: url(../images/icon-locked.png);
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-position: center;
+}
+.block {
+  margin-bottom: 25px;
+}
+
+.content {
+  width: 290px;
+  text-align: center;
+}
+
+/*-----------contact form ------------*/
+
+.contactform {
+  height: 675px;
+  background-color: #222222;
+  background-image: url(../images/background-map.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 300px;
+}
+
+input:invalid {
+  outline: rgb(236, 102, 102) 2px solid;
+}
+input:valid {
+  outline: rgb(77, 243, 85) 2px solid;
+}
+#inputname {
+  width: 455px;
+  height: 50px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  padding: 20px;
+}
+#inputmail {
+  width: 455px;
+  height: 50px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  padding: 20px;
+}
+#inputsubject {
+  width: 455px;
+  height: 50px;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+#inptext {
+  width: 460px;
+  height: 210px;
+  resize: none;
+  border-radius: 5px;
+  padding: 20px;
+  padding-top: 15px;
+  margin-left: 30px;
+}
+
+::placeholder {
+  font-family: "Montserat";
+  font-size: 14px;
+  color: #bbbbbb;
+  text-transform: uppercase;
+}
+#bottom {
+  width: 260px;
+  height: 65px;
+  background-color: #fed136;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: "Montserat";
+  font-weight: 700;
+  color: #ffffff;
+  position: absolute;
+  top: 190%;
+  left: 40%;
+  outline: none;
 }

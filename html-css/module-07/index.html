@@ -6,11 +6,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="../module-07/css/normalize.css" />
     <link rel="stylesheet" href="../module-07/css/style.css" />
+    <title>module-07</title>
   </head>
-  <body class="container">
-    <header>
+  <body>
+    <header class="container">
       <nav class="heading">
-        <a class="logo" href="#">gokden</a>
+        <a class="logo" href="#">golden</a>
         <ul class="navmenu">
           <li><a href="#">home</a></li>
           <li><a href="#">services</a></li>
@@ -21,11 +22,75 @@
       </nav>
     </header>
     <main>
-      <section>
-   
-          <h2>services</h2>
-          <p class="underheading">Proin iaculis purus consequat sem cure.</p>
-        </div>
+      <section class="container">
+        <h2>services</h2>
+        <p class="sub-title">Proin iaculis purus consequat sem cure.</p>
+        <ul class="servicecontent">
+          <li class="content">
+            <div class=" backborder-commerce block"></div>
+            <h3>e-commerce</h3>
+            <br />
+            <p class="description">
+              Proin iaculis purus consequat sem cure digni ssim. Donec
+              porttitora entum suscipit aenean rhoncus posuere odio in
+              tincidunt.
+            </p>
+          </li>
+          <li class="content">
+            <div class="backborder-web block"></div>
+            <h3>e-commerce</h3>
+            <br />
+            <p class="description">
+              Proin iaculis purus consequat sem cure digni ssim. Donec
+              porttitora entum suscipit aenean rhoncus posuere odio in
+              tincidunt.
+            </p>
+          </li>
+          <li class="content">
+            <div class="backborder-security block"></div>
+            <h3>e-commerce</h3>
+            <br />
+            <p class="description">
+              Proin iaculis purus consequat sem cure digni ssim. Donec
+              porttitora entum suscipit aenean rhoncus posuere odio in
+              tincidunt.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="contactform">
+        <h2 class="twoheading">contact us</h2>
+        <p class="sub-title">Proin iaculis purus consequat sem cure.</p>
+        <form class="form container" action="#">
+          <input
+            type="text"
+            name="user"
+            id="inputname"
+            placeholder="your name*"
+            required
+          />
+          <input
+            type="mail"
+            name="mail"
+            id="inputmail"
+            placeholder="your e-mail*"
+            required
+          />
+          <input
+            type="text"
+            name="subject"
+            id="inputsubject"
+            placeholder="subject"
+          />
+          <textarea
+            name="message"
+            id="inptext"
+            cols="30"
+            rows="10"
+            placeholder="your message*"
+          ></textarea>
+          <input type="submit" value="send message" id="bottom" />
+        </form>
       </section>
     </main>
   </body>
