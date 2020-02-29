@@ -7,22 +7,19 @@
 }
 
 .page-header {
-  height: 90px;
+  margin-bottom: 35px;
 }
 
 .container {
-  width: 1140px;
+  width: 1110px;
   margin: 0 auto;
 }
 .maincontain {
   background: #e9f0fd;
-  margin: 0;
-  padding: 0;
 }
 
 .pagenav {
   padding-top: 35px;
-  margin-bottom: 40px;
 }
 
 .logo {
@@ -74,19 +71,36 @@ a.logo::first-letter {
 }
 
 /*banner*/
+/* img {
+  opacity: 0.8;
+  -moz-opacity: 0.8;
+  filter: alpha(opacity=80)black;
+  -khtml-opacity: 0.8;
+  background-color: #000;
+} */
 .banner {
   display: block;
-  margin-bottom: 100px;
-  min-height: 600px;
   list-style: none;
   position: relative;
 }
-.bannerover {
+
+.banner:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+/* .bannerover {
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 510px;
   position: absolute;
-}
+} */
 
 .slideleft {
   width: 105px;
@@ -99,8 +113,9 @@ a.logo::first-letter {
   position: absolute;
   background-color: #1abc9c;
   opacity: 0.5;
-  left: 10%;
-  top: 30%;
+  left: 9%;
+  top: 40%;
+  z-index: 3;
 }
 .hov:hover {
   opacity: 1;
@@ -113,10 +128,11 @@ a.logo::first-letter {
   color: #fff;
   text-transform: uppercase;
   left: 50%;
-  top: 40%;
+  top: 50%;
   font-weight: 900;
   font-family: "roboto";
   transform: translateX(-50%) translateY(-100%);
+  z-index: 3;
 }
 .slideright {
   width: 105px;
@@ -124,13 +140,14 @@ a.logo::first-letter {
   display: inline-block;
   border: none;
   position: absolute;
-  right: 10%;
-  top: 30%;
+  right: 9%;
+  top: 40%;
   background-image: url(../images/right.png);
   background-repeat: no-repeat;
   background-position: center;
   background-color: #1abc9c;
   opacity: 0.5;
+  z-index: 3;
 }
 .banertxt {
   display: inline-block;
@@ -140,11 +157,9 @@ a.logo::first-letter {
   font-weight: 300;
   font-size: 24px;
   color: #fff;
-
+  z-index: 3;
   left: 21%;
-  top: 43%;
-
-  text-align: center;
+  top: 55%;
 }
 
 h2.new_collection {
@@ -154,6 +169,7 @@ h2.new_collection {
   text-align: center;
   color: #515151;
   margin-bottom: 40px;
+  margin-top: 100px;
 }
 
 h2::after {
@@ -178,14 +194,12 @@ img {
 
 .overlay {
   background-color: rgba(0, 0, 0, 0.5);
-  width: 95%;
-  height: 95%;
   overflow: auto;
   margin: auto;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
   position: absolute;
   opacity: 0;
 }
@@ -199,11 +213,14 @@ img {
   top: 80px;
   left: 35px;
   display: block;
-  outline: 1px #ffffff solid;
+
   position: absolute;
   background-image: url(../images/heart.png);
   background-repeat: no-repeat;
   background-position: center;
+
+  background-color: transparent;
+  border: 1px #fff solid;
 }
 .iconhover:hover {
   background-color: #1abc9c;
@@ -215,11 +232,14 @@ img {
   top: 80px;
   left: 95px;
   display: block;
-  outline: 1px #ffffff solid;
+
   position: absolute;
   background-image: url(../images/arrows.png);
   background-repeat: no-repeat;
   background-position: center;
+
+  background-color: transparent;
+  border: 1px #fff solid;
 }
 .icon-clock {
   width: 50px;
@@ -227,11 +247,13 @@ img {
   top: 80px;
   right: 35px;
   display: block;
-  outline: 1px #ffffff solid;
   position: absolute;
   background-image: url(../images/clock.png);
   background-repeat: no-repeat;
   background-position: center;
+
+  background-color: transparent;
+  border: 1px #fff solid;
 }
 .icon-basket {
   width: 172px;
@@ -239,7 +261,7 @@ img {
   top: 138px;
   left: 35px;
   display: block;
-  outline: 1px #ffffff solid;
+  border: 1px #fff solid;
   position: absolute;
   background-image: url(../images/basket.png);
   background-repeat: no-repeat;
@@ -290,7 +312,6 @@ img {
 }
 .catalog-item {
   width: 255px;
-  height: 320px;
   float: left;
   margin: 0;
   padding: 0;
