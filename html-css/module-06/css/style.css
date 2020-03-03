@@ -204,7 +204,6 @@ h3 {
   height: 470px;
   object-fit: cover;
   display: block;
-  margin-bottom: 30px;
 }
 
 .overlay {
@@ -223,80 +222,58 @@ h3 {
   );
   background-image: -webkit-linear-gradient(
     90deg,
-    rgb(252, 227, 138) 0%,
-    rgb(243, 129, 129) 100%
+    rgb(252, 227, 138, 0.9) 0%,
+    rgb(243, 129, 129, 0.9) 100%
   );
   background-image: -ms-linear-gradient(
     90deg,
-    rgb(252, 227, 138) 0%,
-    rgb(243, 129, 129) 100%
+    rgba(252, 227, 138, 0.9) 0%,
+    rgba(243, 129, 129, 0.9) 0%
   );
   width: 380px;
   height: 470px;
 }
 
-.overlay:hover {
-  opacity: 0.9;
+.stafimg:hover {
+  transition-duration: 200ms;
   transform: translate(-10px, -10px);
+  transition-timing-function: linear;
+}
+.overlay:hover {
+  opacity: 1;
   transition-duration: 200ms;
   transition-timing-function: linear;
   box-shadow: 10px 10px 0 skyblue;
-  z-index: 2;
   position: absolute;
 }
-.overlay a {
-  opacity: 1;
-  z-index: 10;
-}
-
 .teamstaf:not(:nth-child(3n)) {
   margin-right: 30px;
 }
+.teamstaf h3 {
+  margin-top: 30px;
+}
 
-.icon-facebook {
+.overicon {
   width: 60px;
   height: 60px;
   top: 40%;
   left: 20%;
   display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #fce38a;
+}
+.facebook {
   background-image: url(../images/icon-facebook.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #fce38a;
 }
-.icon-twiter {
-  width: 60px;
-  height: 60px;
-  top: 40%;
-  left: 35%;
-  display: block;
+.twiter {
   background-image: url(../images/icon-twitter.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #fce38a;
 }
-.icon-pinterest {
-  width: 60px;
-  height: 60px;
-  top: 40%;
-  right: 35%;
-  display: block;
-
+.pinterest {
   background-image: url(../images/icon-pinterest.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #fce38a;
 }
-.icon-instagram {
-  width: 60px;
-  height: 60px;
-  top: 40%;
-  right: 20%;
-  display: block;
+.instagram {
   background-image: url(../images/icon-inst.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #fce38a;
 }
 .iconhover:not(:nth-child(4n)) {
   margin-right: 1px;
