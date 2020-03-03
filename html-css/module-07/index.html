@@ -26,18 +26,7 @@
         <p class="sub-title">Proin iaculis purus consequat sem cure.</p>
         <ul class="servicecontent">
           <li class="content ">
-            <div class="backborder-commerce"></div>
-            <h3>e-commerce</h3>
-            <br />
-            <p class="description">
-              Proin iaculis purus consequat sem cure digni ssim. Donec
-              porttitora entum suscipit aenean rhoncus posuere odio in
-              tincidunt.
-            </p>
-          </li>
-          <li class="content backborder-web">
-            <h3>e-commerce</h3>
-            <br />
+            <h3 id="e-commerce">e-commerce</h3>
             <p class="description">
               Proin iaculis purus consequat sem cure digni ssim. Donec
               porttitora entum suscipit aenean rhoncus posuere odio in
@@ -45,9 +34,15 @@
             </p>
           </li>
           <li class="content">
-            <div class="backborder-security block"></div>
-            <h3>e-commerce</h3>
-            <br />
+            <h3 id="responsive">e-commerce</h3>
+            <p class="description">
+              Proin iaculis purus consequat sem cure digni ssim. Donec
+              porttitora entum suscipit aenean rhoncus posuere odio in
+              tincidunt.
+            </p>
+          </li>
+          <li class="content">
+            <h3 id="secure">e-commerce</h3>
             <p class="description">
               Proin iaculis purus consequat sem cure digni ssim. Donec
               porttitora entum suscipit aenean rhoncus posuere odio in
@@ -59,7 +54,7 @@
       <section class="contactform">
         <h2 class="twoheading">contact us</h2>
         <p class="sub-title">Proin iaculis purus consequat sem cure.</p>
-        <form class="form container" action="#">
+        <form class="form container clearfix" action="#">
           <input
             type="text"
             name="user"
@@ -67,6 +62,14 @@
             placeholder="your name*"
             required
           />
+          <textarea
+            name="message"
+            id="inptext"
+            cols="30"
+            rows="10"
+            required
+            placeholder="your message*"
+          ></textarea>
           <input
             type="text"
             name="mail"
@@ -80,13 +83,6 @@
             id="inputsubject"
             placeholder="subject"
           />
-          <textarea
-            name="message"
-            id="inptext"
-            cols="30"
-            rows="10"
-            placeholder="your message*"
-          ></textarea>
           <input type="submit" value="send message" id="bottom" />
         </form>
       </section>

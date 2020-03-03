@@ -90,7 +90,7 @@ h2.twoheading {
 
 .sub-title {
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 170px;
   font-family: "Cambay";
   color: #777777;
   font-size: 16px;
@@ -102,6 +102,8 @@ h3 {
   text-transform: capitalize;
   font-weight: 700;
   color: rgb(34, 34, 34);
+  position: relative;
+  margin-bottom: 20px;
 }
 
 .description {
@@ -117,17 +119,6 @@ h3 {
   margin-bottom: 120px;
 }
 
-.backborder-commerce {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  border: 2px #fed136 solid;
-  background-image: url(../images/icon-basket.png);
-  background-repeat: no-repeat;
-  margin: 0 auto;
-  background-position: center;
-}
-
 h3::before {
   content: "";
   width: 70px;
@@ -135,20 +126,21 @@ h3::before {
   border-radius: 50%;
   border: 2px #fed136 solid;
   position: absolute;
+  transform: translateX(20px);
+  bottom: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#e-commerce::before {
   background-image: url(../images/icon-basket.png);
-  background-repeat: no-repeat;
-  background-position: center;
 }
-.backborder-security {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  border: 2px #fed136 solid;
+#responsive::before {
+  background-image: url(../images/icon-v.png);
+}
+#secure::before {
   background-image: url(../images/icon-locked.png);
-  background-repeat: no-repeat;
-  margin: 0 auto;
-  background-position: center;
 }
+
 .content {
   width: 290px;
   text-align: center;
@@ -163,39 +155,35 @@ h3::before {
   background-repeat: no-repeat;
   background-position: right;
 }
-
+.contactform p {
+  margin-bottom: 75px;
+}
 .form {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  height: 300px;
+  text-align: center;
 }
 
-input:invalid {
-  outline: rgb(236, 102, 102) 2px solid;
-}
-input:valid {
-  outline: rgb(77, 243, 85) 2px solid;
-}
 #inputname {
   width: 455px;
   height: 50px;
-  margin-bottom: 30px;
   border-radius: 5px;
   padding: 20px;
+  float: left;
+  margin-bottom: 30px;
 }
 #inputmail {
   width: 455px;
   height: 50px;
-  margin-bottom: 30px;
   border-radius: 5px;
   padding: 20px;
+  float: left;
+  margin-bottom: 30px;
 }
 #inputsubject {
   width: 455px;
   height: 50px;
   border-radius: 5px;
   padding: 20px;
+  float: left;
 }
 
 #inptext {
@@ -204,8 +192,21 @@ input:valid {
   resize: none;
   border-radius: 5px;
   padding: 20px;
-  padding-top: 15px;
-  margin-left: 30px;
+  float: right;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+input:invalid {
+  border-color: hsla(0, 90%, 70%, 1);
+}
+
+input:valid {
+  border-color: hsla(100, 90%, 70%, 1);
 }
 
 ::placeholder {
@@ -225,8 +226,6 @@ input:valid {
   font-family: "Montserat";
   font-weight: 700;
   color: #ffffff;
-  position: absolute;
-  top: 190%;
-  left: 40%;
+  margin-top: 30px;
   outline: none;
 }
