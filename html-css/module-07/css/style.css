@@ -127,14 +127,16 @@ h3 {
   margin: 0 auto;
   background-position: center;
 }
-.backborder-web {
+
+h3::before {
+  content: "";
   width: 70px;
   height: 70px;
   border-radius: 50%;
   border: 2px #fed136 solid;
-  background-image: url(../images/icon-v.png);
+  position: absolute;
+  background-image: url(../images/icon-basket.png);
   background-repeat: no-repeat;
-  margin: 0 auto;
   background-position: center;
 }
 .backborder-security {
@@ -147,10 +149,6 @@ h3 {
   margin: 0 auto;
   background-position: center;
 }
-.block {
-  margin-bottom: 25px;
-}
-
 .content {
   width: 290px;
   text-align: center;

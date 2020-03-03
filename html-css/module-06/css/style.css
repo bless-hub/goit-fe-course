@@ -314,7 +314,7 @@ h3 {
   color: #f38181;
   text-decoration: none;
 }
-.bottom {
+.button {
   width: 150px;
   height: 40px;
   background-color: #95e1d3;
@@ -324,6 +324,9 @@ h3 {
   font-weight: 700;
   margin: 0;
   padding: 0;
+}
+.form {
+  display: flex;
 }
 
 .textform {
