@@ -135,16 +135,37 @@ h3 {
   margin-bottom: 20px;
 }
 
-h3::before {
+.content h3::before {
   content: "";
-  background-image: url(..//images/clock.png);
-  height: 30px;
-  width: 30px;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
   transform: translateX(-55px);
+
   position: absolute;
 }
-.iconseo h3::before {
+
+#photoicon::before {
+  background-image: url(..//images/clock.png);
+}
+
+#webicon::before {
+  background-image: url(../images/webdisign.png);
+}
+#creaticon::before {
+  background-image: url(../images/creativity.png);
+}
+#iconseo::before {
   background-image: url(../images/seo.png);
+}
+#csshtml::before {
+  background-image: url(../images/icon-pinterest.png;);
+}
+#csshtml::before {
+  background-image: url(../images/css.png);
+}
+#digitalicon::before {
+  background-image: url(../images/digiral.png);
 }
 
 .content p {
@@ -222,6 +243,10 @@ h3::before {
   box-shadow: 10px 10px 0 skyblue;
   z-index: 2;
   position: absolute;
+}
+.overlay a {
+  opacity: 1;
+  z-index: 10;
 }
 
 .teamstaf:not(:nth-child(3n)) {
