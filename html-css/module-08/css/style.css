@@ -7,25 +7,21 @@
   font-family: "Montserat";
   src: url("../fonts/montserrat-v14-latin-regular.woff") format("woff");
   font-weight: 400;
-  font-style: none;
 }
 @font-face {
   font-family: "Montserat";
   src: url("../fonts/montserrat-v14-latin-700.woff") format("woff");
   font-weight: 700;
-  font-style: none;
 }
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/roboto-v20-latin-300.woff") format("woff");
   font-weight: 300;
-  font-style: none;
 }
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/roboto-v20-latin-regular.woff2") format("woff2");
   font-weight: 400;
-  font-style: none;
 }
 
 .background-image img {
