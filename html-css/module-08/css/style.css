@@ -32,25 +32,28 @@
 
 .container {
   width: 100%;
-  max-width: 320px;
+  max-width: 940px;
   min-width: 320px;
-  margin: 0 auto;
+  margin: auto;
 }
 
 header {
+  padding-top: 20px;
   position: absolute;
-  padding: 20px 70px;
   z-index: 3;
+  margin: auto;
+  text-align: center;
+  padding: auto;
 }
 .hero {
+  display: block;
   position: relative;
-  width: 100%;
-  height: auto;
 }
 
 .login {
   margin-bottom: 110px;
   display: flex;
+  justify-content: center;
 }
 .login button {
   width: 90px;
@@ -105,6 +108,8 @@ h1 {
   z-index: 3;
   top: 175px;
   left: 0;
+  right: 0;
+  bottom: 0;
   width: 100%;
 }
 
@@ -129,8 +134,12 @@ h1 {
   color: #fff;
   font-size: 14px;
   font-family: "montserat";
-  bottom: 140px;
-  margin-left: 10%;
+  font-weight: 700;
+  bottom: 0;
+  margin: auto;
+  top: 210px;
+  left: 0;
+  right: 0;
 }
 
 /*-----------------user list ---------------*/
@@ -294,8 +303,10 @@ h4::after {
     justify-content: space-between;
     flex-direction: row-reverse;
     position: absolute;
-    z-index: 3;
+    padding-right: 15%;
+    padding-left: 15%;
   }
+
   .user {
     margin-bottom: 35px;
   }
