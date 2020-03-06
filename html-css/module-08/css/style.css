@@ -137,7 +137,7 @@ h1 {
   margin-left: 10%;
 }
 
-/*-------user list --------*/
+/*-----------------user list ---------------*/
 
 .container2 {
   margin-top: 70px;
@@ -157,6 +157,7 @@ h3 {
 }
 .user {
   margin: 0 auto;
+  width: 220px;
 }
 
 .listusers {
@@ -206,8 +207,8 @@ h4::after {
 .user p {
   font-family: "roboto", sans-serif;
   color: #666666;
+  font-size: 14px;
   font-weight: 300;
-  width: 235px;
   margin: 0 auto;
 }
 .user {
@@ -256,7 +257,6 @@ h4::after {
     z-index: 3;
   }
 
-
   h1 {
     font-size: 52px;
     top: 90px;
@@ -264,18 +264,16 @@ h4::after {
   .titleheader {
     font-size: 24px;
     bottom: 225px;
-   
   }
 
   .listusers {
-    width: 490px;
+    width: 530px;
     display: flex;
-
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 auto;
-   
   }
+  
   .buttonsearch {
     margin-left: 35%;
   
