@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Montserat";
+  src: url("../fonts/montserrat-v14-latin-regular.woff") format("woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Montserat";
+  src: url("../fonts/montserrat-v14-latin-700.woff") format("woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto-v20-latin-300.woff") format("woff");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto-v20-latin-regular.woff2") format("woff2");
+  font-weight: 400;
+}
+
+.container {
+  min-width: 320px;
+  max-width: 320px;
+  width: 100%;
+  margin: auto;
+}
+
+header {
+  position: absolute;
+  z-index: 5;
+}
+
+.share {
+  margin-top: 150px;
+}
+
+.hero {
+  background-image: url(..//image/big.png);
+  background-color: rgba(0, 0, 0, 0.9);
+
+  height: 540px;
+
+  position: absolute;
+  background-position: center;
+}
