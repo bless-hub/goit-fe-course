@@ -1,3 +1,27 @@
+@font-face {
+  font-family: "Montserat";
+  src: url("../fonts/montserrat-v14-latin-regular.woff") format("woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Montserat";
+  src: url("../fonts/montserrat-v14-latin-700.woff") format("woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto-v20-latin-300.woff") format("woff");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto-v20-latin-regular.woff2") format("woff2");
+  font-weight: 400;
+}
+
+header {
+  padding-top: 20px;
+}
 .hero {
   display: block;
   position: relative;
@@ -7,6 +31,7 @@
   object-fit: cover;
   background-position: center;
   background-repeat: no-repeat;
+  margin-bottom: 70px;
 }
 .log {
   width: 90px;
@@ -26,19 +51,8 @@
   border: 2px #fff solid;
 }
 
-.login button {
-  width: 90px;
-  height: 35px;
-  border-radius: 25px;
-  color: #fff;
-  font-size: 14px;
-  font-family: "montserat";
-  font-weight: 700;
-  background-color: transparent;
-  text-transform: capitalize;
-  border-style: none;
-}
-.logo {
+.logo,
+.logo:hover {
   font-family: "Montserat";
   text-decoration: none;
   font-size: 20px;
@@ -46,6 +60,7 @@
   color: #fff;
   margin-bottom: 15px;
 }
+
 h1 {
   font-family: "Montserat";
   text-decoration: none;
@@ -53,7 +68,7 @@ h1 {
   text-transform: uppercase;
   font-weight: 700;
   color: #fff;
-  padding-top: 200px;
+  padding-top: 130px;
   margin-bottom: 15px;
   width: 100%;
 }
@@ -86,21 +101,12 @@ h3 {
   font-family: "montserat";
   font-weight: 700;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
-.users {
+.user img {
   border-radius: 50%;
   margin-bottom: 20px;
-}
-.user {
-  margin: 0 auto;
-  width: 220px;
-}
-
-.listusers {
-  list-style: none;
-  text-align: center;
 }
 
 h4 {
@@ -108,6 +114,7 @@ h4 {
   font-family: "montserat";
   font-weight: 700;
   position: relative;
+  font-size: 14px;
 }
 
 h4::after {
@@ -121,7 +128,7 @@ h4::after {
   display: block;
   background-repeat: no-repeat;
   background-position: center;
-  bottom: 25px;
+  bottom: 27px;
   left: 55%;
 }
 #icon1:after {
@@ -167,4 +174,11 @@ h4::after {
   display: block;
   margin: auto;
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    padding-top: 50px;
+    font-size: 52px;
+  }
 }
