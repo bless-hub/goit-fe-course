@@ -28,7 +28,7 @@ header {
   background-image: url(..//image/big.png);
   background-color: rgba(0, 0, 0, 0.9);
   height: 540px;
-  object-fit: cover;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   margin-bottom: 70px;
