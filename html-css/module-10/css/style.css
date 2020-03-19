@@ -256,7 +256,6 @@
   margin-right: 30px;
 }
 
-
 .ourteam-teamlist__staf_facebook,
 .ourteam-teamlist__staf_twitter,
 .ourteam-teamlist__staf_instagram,
@@ -290,7 +289,6 @@
 
 .ourteam-teamlist__team-name {
   text-align: center;
- 
 }
 
 .ourteam-teamlist__profession {
@@ -357,8 +355,8 @@
   color: #cccccc;
 }
 
-
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    .baner {
-        background-image: url(..//image/15@2x-min.png);
+  .baner {
+    background-image: url(..//image/15@2x-min.png);
+  }
 }
