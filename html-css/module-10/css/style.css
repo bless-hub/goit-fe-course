@@ -1,0 +1,364 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.baner {
+  background-image: url(..//image/15-min.png);
+  height: 1000px;
+
+  position: relative;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: 700;
+  font-family: "montserrat";
+  font-size: 30px;
+  color: #fff;
+}
+.menu {
+  display: flex;
+  list-style: none;
+  height: 20px;
+}
+
+.menu__item:not(:last-child) {
+  margin-right: 55px;
+}
+
+.menu__item_link {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #fff;
+  font-family: "montserrat";
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.menu__item_link:hover {
+  color: #fce38a;
+}
+
+.menu__item_link:hover::after {
+  color: #fce38a;
+  content: "";
+  width: auto;
+  display: block;
+  height: 2px;
+  background-color: #fce38a;
+  margin: 5px auto;
+}
+
+.main-title {
+  position: absolute;
+  width: 60%;
+  height: 90%;
+
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+}
+
+.main-title__title {
+  padding-top: 200px;
+  font-family: "kaushan script";
+  color: #fff;
+  font-size: 72px;
+  margin-bottom: 30px;
+}
+.main-title__text {
+  color: #fff;
+  font-family: "montserrat";
+  font-weight: 700;
+  font-size: 150px;
+  margin-bottom: 120px;
+}
+
+.main-title__button {
+  width: 155px;
+  height: 40px;
+  background-color: transparent;
+  border: 2px #fff solid;
+  color: #fff;
+}
+
+.baner {
+  position: relative;
+}
+.header-icons {
+  fill: #fff;
+}
+.header-icons:hover {
+  fill: #fce38a;
+}
+
+/**********SERVICE**************/
+.ourteam-title,
+.service-title {
+  text-align: center;
+  color: #333333;
+  padding-top: 45px;
+}
+.ourteam-title__header,
+.service-title__header {
+  font-family: "kaushan script";
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.ourteam-title__title,
+.service-title__title {
+  font-family: "montserrat";
+  font-weight: 700;
+  font-size: 30px;
+}
+.ourteam-title__title:after {
+  content: "";
+  display: block;
+  background-color: #f38181;
+  width: 60px;
+  height: 2px;
+  margin: 40px auto 0;
+  margin-bottom: 65px;
+}
+
+.service-title__title::after {
+  content: "";
+  display: block;
+  background-color: #f38181;
+  width: 60px;
+  height: 2px;
+  margin: 40px auto 0;
+  margin-bottom: 65px;
+}
+
+.content-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content-list__item {
+  width: 383px;
+  padding-left: 80px;
+  position: relative;
+  margin-bottom: 100px;
+}
+.ourteam-teamlist__team-name,
+.content-list__item_header {
+  font-family: "montserrat";
+  font-weight: 400;
+  font-size: 14px;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.service-icons {
+  position: absolute;
+  left: 20px;
+  fill: #95e1d3;
+}
+
+.content-list__item_title {
+  font-family: "roboto";
+  font-weight: 400;
+  font-size: 15px;
+  color: #999999;
+}
+
+.ourteam-title__lorem {
+  text-align: center;
+  width: 980px;
+  margin: 0 auto;
+  font-family: "Roboto";
+  font-weight: 400;
+  color: #999999;
+  font-size: 15px;
+  margin-bottom: 90px;
+}
+
+.ourteam-teamlist {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 85px;
+}
+
+.ourteam-teamlist__teamstaf {
+  width: 380px;
+}
+.ourteam-teamlist__staf img {
+  width: 380px;
+  height: 470px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 25px;
+}
+
+.overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  opacity: 0;
+  z-index: 1;
+  background-image: -moz-linear-gradient(
+    90deg,
+    rgb(252, 227, 138) 0%,
+    rgb(243, 129, 129) 100%
+  );
+  background-image: -webkit-linear-gradient(
+    90deg,
+    rgb(252, 227, 138, 0.9) 0%,
+    rgb(243, 129, 129, 0.9) 100%
+  );
+  background-image: -ms-linear-gradient(
+    90deg,
+    rgba(252, 227, 138, 0.9) 0%,
+    rgba(243, 129, 129, 0.9) 0%
+  );
+  width: 380px;
+  height: 470px;
+}
+
+.ourteam-teamlist__staf:hover {
+  transition-duration: 200ms;
+  transform: translate(-10px, -10px);
+  transition-timing-function: linear;
+}
+.overlay:hover {
+  opacity: 1;
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+  box-shadow: 10px 10px 0 skyblue;
+  position: absolute;
+}
+.ourteam-teamlist__teamstaf:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+
+.ourteam-teamlist__staf_facebook,
+.ourteam-teamlist__staf_twitter,
+.ourteam-teamlist__staf_instagram,
+.ourteam-teamlist__staf_pinterest {
+  fill: #f38181;
+  background-color: #fce38a;
+  padding-top: 25%;
+  padding-left: 25%;
+  width: 60px;
+  height: 60px;
+
+  margin-right: 2px;
+}
+
+.facebook:hover {
+  background-color: #f38181;
+  fill: #ffffff;
+}
+.twitter:hover {
+  background-color: #f38181;
+  fill: #ffffff;
+}
+.pinterest:hover {
+  background-color: #f38181;
+  fill: #ffffff;
+}
+.instagram:hover {
+  background-color: #f38181;
+  fill: #ffffff;
+}
+
+.ourteam-teamlist__team-name {
+  text-align: center;
+ 
+}
+
+.ourteam-teamlist__profession {
+  font-family: "Roboto";
+  font-weight: 300;
+  color: #999999;
+  font-style: italic;
+  font-size: 15px;
+  text-align: center;
+}
+
+/***********footer*****************************/
+
+.footer {
+  display: flex;
+  height: 60px;
+  border-top: 2px #e5e5e5 solid;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.developers {
+  font-family: "Montserrat";
+  font-weight: 400;
+  color: rgb(51, 51, 51);
+  font-size: 14px;
+}
+.developers a {
+  color: #f38181;
+  text-decoration: none;
+}
+.button {
+  width: 150px;
+  height: 40px;
+  background-color: #95e1d3;
+  border: none;
+  color: #fff;
+  font-family: "Montserrat";
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+.form {
+  display: flex;
+}
+
+.textform {
+  width: 230px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  border: 1px #e7e7e7 solid;
+  font-family: "Roboto";
+  font-size: 15px;
+  font-style: italic;
+  color: black;
+  text-align: justify;
+  padding-left: 15px;
+}
+::placeholder {
+  font-family: "Roboto";
+  font-size: 15px;
+  font-style: italic;
+  color: #cccccc;
+}
+
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .baner {
+        background-image: url(..//image/15@2x-min.png);
+}
