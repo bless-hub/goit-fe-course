@@ -1,0 +1,14 @@
+{
+  "name": "module-11",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass --watch src/scss/style.scss -o src/css"
+  },
+  "author": "Vlad Bondarenko",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
