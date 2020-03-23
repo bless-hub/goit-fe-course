@@ -72,8 +72,7 @@ npm install
 npm start
 ```
 
-Во вкладке браузера перейти по адресу
-[http://localhost:1234](http://localhost:1234).
+Во вкладке браузера перейти по адресу [](http://localhost:1234).
 
 ### Building
 
