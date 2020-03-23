@@ -16,18 +16,17 @@
   font-family: 'montserrat';
   font-weight: 400;
   text-decoration: none;
-}
 
-.menu__item_link:hover {
-  color: #fce38a;
-}
-
-.menu__item_link:hover::after {
-  color: #fce38a;
-  content: '';
-  width: auto;
-  display: block;
-  height: 2px;
-  background-color: #fce38a;
-  margin: 5px auto;
+  &:hover {
+    color: $menu-hover-color;
+  }
+  &:hover::after {
+    color: $menu-hover-color;
+    content: '';
+    width: auto;
+    display: block;
+    height: 2px;
+    background-color: $menu-hover-color;
+    margin: 5px auto;
+  }
 }

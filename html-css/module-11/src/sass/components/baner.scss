@@ -5,4 +5,9 @@
   max-width: 100%;
   background-repeat: no-repeat;
   background-position: center;
+  @media (-webkit-min-device-pixel-ratio: 2),
+    (-o-min-device-pixel-ratio: 2/1),
+    (min-resolution: 192dpi) {
+    background-image: url(..//images/img/15@2x-min.png);
+  }
 }

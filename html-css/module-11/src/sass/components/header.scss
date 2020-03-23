@@ -6,11 +6,6 @@
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-}
-
-.header-icons {
+  align-items: center;
   fill: $header-color;
-}
-.header-icons:hover {
-  fill: #fce38a;
 }

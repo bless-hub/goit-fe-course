@@ -1,0 +1,17 @@
+.ourteam-teamlist__staf_facebook,
+.ourteam-teamlist__staf_twitter,
+.ourteam-teamlist__staf_instagram,
+.ourteam-teamlist__staf_pinterest {
+  fill: $primary-color-red;
+  background-color: $menu-hover-color;
+  padding-top: 25%;
+  padding-left: 25%;
+  width: 60px;
+  height: 60px;
+  margin-right: 2px;
+
+  &:hover {
+    background-color: $primary-color-red;
+    fill: $header-color;
+  }
+}

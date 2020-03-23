@@ -10,15 +10,31 @@
 
 .ourteam-teamlist__teamstaf {
   width: 380px;
+
+  &:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
 }
 
-.ourteam-teamlist__staf img {
+.ourteam-teamlist__staf {
   width: 380px;
   height: 470px;
   -o-object-fit: cover;
   object-fit: cover;
   display: block;
   margin-bottom: 25px;
+
+  &:hover {
+    -webkit-transition-duration: 200ms;
+    -o-transition-duration: 200ms;
+    transition-duration: 200ms;
+    -webkit-transform: translate(-10px, -10px);
+    -ms-transform: translate(-10px, -10px);
+    transform: translate(-10px, -10px);
+    -webkit-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
+    transition-timing-function: linear;
+  }
 }
 
 .overlay {
@@ -55,63 +71,19 @@
   );
   width: 380px;
   height: 470px;
-}
 
-.ourteam-teamlist__staf:hover {
-  -webkit-transition-duration: 200ms;
-  -o-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transform: translate(-10px, -10px);
-  -ms-transform: translate(-10px, -10px);
-  transform: translate(-10px, -10px);
-  -webkit-transition-timing-function: linear;
-  -o-transition-timing-function: linear;
-  transition-timing-function: linear;
-}
-.overlay:hover {
-  opacity: 1;
-  -webkit-transition-duration: 200ms;
-  -o-transition-duration: 200ms;
-  transition-duration: 200ms;
-  -webkit-transition-timing-function: linear;
-  -o-transition-timing-function: linear;
-  transition-timing-function: linear;
-  -webkit-box-shadow: 10px 10px 0 skyblue;
-  box-shadow: 10px 10px 0 skyblue;
-  position: absolute;
-}
-.ourteam-teamlist__teamstaf:not(:nth-child(3n)) {
-  margin-right: 30px;
-}
-.ourteam-teamlist__staf_facebook,
-.ourteam-teamlist__staf_twitter,
-.ourteam-teamlist__staf_instagram,
-.ourteam-teamlist__staf_pinterest {
-  fill: #f38181;
-  background-color: #fce38a;
-  padding-top: 25%;
-  padding-left: 25%;
-  width: 60px;
-  height: 60px;
-
-  margin-right: 2px;
-}
-
-.ourteam-teamlist__staf_facebook:hover {
-  background-color: #f38181;
-  fill: #ffffff;
-}
-.ourteam-teamlist__staf_twitter:hover {
-  background-color: #f38181;
-  fill: #ffffff;
-}
-.ourteam-teamlist__staf_pinterest:hover {
-  background-color: #f38181;
-  fill: #ffffff;
-}
-.ourteam-teamlist__staf_instagram:hover {
-  background-color: #f38181;
-  fill: #ffffff;
+  &:hover {
+    opacity: 1;
+    -webkit-transition-duration: 200ms;
+    -o-transition-duration: 200ms;
+    transition-duration: 200ms;
+    -webkit-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
+    transition-timing-function: linear;
+    -webkit-box-shadow: 10px 10px 0 skyblue;
+    box-shadow: 10px 10px 0 skyblue;
+    position: absolute;
+  }
 }
 
 .ourteam-teamlist__team-name {
@@ -121,51 +93,7 @@
 .ourteam-teamlist__profession {
   font-family: 'Roboto';
   font-weight: 300;
-  color: #999999;
-  font-style: italic;
-  font-size: 15px;
-  text-align: center;
-}
-
-.ourteam-teamlist__staf_facebook,
-.ourteam-teamlist__staf_twitter,
-.ourteam-teamlist__staf_instagram,
-.ourteam-teamlist__staf_pinterest {
-  fill: #f38181;
-  background-color: #fce38a;
-  padding-top: 25%;
-  padding-left: 25%;
-  width: 60px;
-  height: 60px;
-
-  margin-right: 2px;
-}
-
-.ourteam-teamlist__staf_facebook:hover {
-  background-color: #f38181;
-  fill: #ffffff;
-}
-.ourteam-teamlist__staf_twitter:hover {
-  background-color: #f38181;
-  fill: #ffffff;
-}
-.ourteam-teamlist__staf_pinterest:hover {
-  background-color: #f38181;
-  fill: #ffffff;
-}
-.ourteam-teamlist__staf_instagram:hover {
-  background-color: #f38181;
-  fill: #ffffff;
-}
-
-.ourteam-teamlist__team-name {
-  text-align: center;
-}
-
-.ourteam-teamlist__profession {
-  font-family: 'Roboto';
-  font-weight: 300;
-  color: #999999;
+  color: $primary-color-gray;
   font-style: italic;
   font-size: 15px;
   text-align: center;

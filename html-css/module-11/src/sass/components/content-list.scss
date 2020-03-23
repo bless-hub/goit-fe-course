@@ -24,11 +24,11 @@
 .service-icons {
   position: absolute;
   left: 20px;
-  fill: #95e1d3;
+  fill: $service-icons-color;
 }
 .content-list__item_title {
   font-family: 'roboto';
   font-weight: 400;
   font-size: 15px;
-  color: #999999;
+  color: $primary-color-gray;
 }

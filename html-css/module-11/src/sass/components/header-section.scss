@@ -15,23 +15,14 @@
   font-family: 'montserrat';
   font-weight: 700;
   font-size: 30px;
-}
-.ourteam-title__title:after {
-  content: '';
-  display: block;
-  background-color: #f38181;
-  width: 60px;
-  height: 2px;
-  margin: 40px auto 0;
-  margin-bottom: 65px;
-}
 
-.service-title__title:after {
-  content: '';
-  display: block;
-  background-color: #f38181;
-  width: 60px;
-  height: 2px;
-  margin: 40px auto 0;
-  margin-bottom: 65px;
+  &::after {
+    content: '';
+    display: block;
+    background-color: $primary-color-red;
+    width: 60px;
+    height: 2px;
+    margin: 40px auto 0;
+    margin-bottom: 65px;
+  }
 }

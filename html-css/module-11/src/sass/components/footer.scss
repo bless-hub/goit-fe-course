@@ -14,15 +14,15 @@
 }
 
 .footer__developers_nametheme {
-  color: #f38181;
+  color: $primary-color-red;
   text-decoration: none;
 }
 .form__button {
   width: 150px;
   height: 40px;
-  background-color: #95e1d3;
+  background-color: $service-icons-color;
   border: none;
-  color: #fff;
+  color: $header-color;
   font-family: 'Montserrat';
   font-weight: 700;
   margin: 0;
