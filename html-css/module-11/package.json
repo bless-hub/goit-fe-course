@@ -9,7 +9,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://bless-hub.github.io/goit-fe-course/",
+  "homepage": "https://bless-hub.github.io/goit-fe-course",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/luxplanjay/gulp-starter-kit.git"
