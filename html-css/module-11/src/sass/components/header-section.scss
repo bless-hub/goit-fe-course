@@ -1,0 +1,37 @@
+.ourteam-title,
+.service-title {
+  text-align: center;
+  color: #333333;
+  padding-top: 45px;
+}
+.ourteam-title__header,
+.service-title__header {
+  font-family: 'kaushan script';
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.ourteam-title__title,
+.service-title__title {
+  font-family: 'montserrat';
+  font-weight: 700;
+  font-size: 30px;
+}
+.ourteam-title__title:after {
+  content: '';
+  display: block;
+  background-color: #f38181;
+  width: 60px;
+  height: 2px;
+  margin: 40px auto 0;
+  margin-bottom: 65px;
+}
+
+.service-title__title:after {
+  content: '';
+  display: block;
+  background-color: #f38181;
+  width: 60px;
+  height: 2px;
+  margin: 40px auto 0;
+  margin-bottom: 65px;
+}

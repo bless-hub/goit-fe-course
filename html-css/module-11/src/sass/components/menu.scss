@@ -1,0 +1,33 @@
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  height: 20px;
+}
+.menu__item:not(:last-child) {
+  margin-right: 55px;
+}
+
+.menu__item_link {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: $header-color;
+  font-family: 'montserrat';
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.menu__item_link:hover {
+  color: #fce38a;
+}
+
+.menu__item_link:hover::after {
+  color: #fce38a;
+  content: '';
+  width: auto;
+  display: block;
+  height: 2px;
+  background-color: #fce38a;
+  margin: 5px auto;
+}

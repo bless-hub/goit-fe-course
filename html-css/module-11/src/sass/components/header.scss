@@ -1,0 +1,16 @@
+.header {
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.header-icons {
+  fill: $header-color;
+}
+.header-icons:hover {
+  fill: #fce38a;
+}
