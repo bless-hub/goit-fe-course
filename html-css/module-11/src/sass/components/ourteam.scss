@@ -39,9 +39,7 @@
 
 .overlay {
   display: flex;
-
   align-items: center;
-
   justify-content: center;
   width: 200px;
   height: 200px;
@@ -68,9 +66,7 @@
 
   &:hover {
     opacity: 1;
-
     transition-duration: 200ms;
-
     transition-timing-function: linear;
     box-shadow: 10px 10px 0 skyblue;
     position: absolute;
