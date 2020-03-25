@@ -38,16 +38,10 @@
 }
 
 .overlay {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
+
   justify-content: center;
   width: 200px;
   height: 200px;
@@ -74,13 +68,10 @@
 
   &:hover {
     opacity: 1;
-    -webkit-transition-duration: 200ms;
-    -o-transition-duration: 200ms;
+
     transition-duration: 200ms;
-    -webkit-transition-timing-function: linear;
-    -o-transition-timing-function: linear;
+
     transition-timing-function: linear;
-    -webkit-box-shadow: 10px 10px 0 skyblue;
     box-shadow: 10px 10px 0 skyblue;
     position: absolute;
   }
