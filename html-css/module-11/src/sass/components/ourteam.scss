@@ -54,20 +54,12 @@
   position: absolute;
   opacity: 0;
   z-index: 1;
-  background-color: -moz-linear-gradient(
-    90deg,
-    rgb(252, 227, 138) 0%,
-    rgb(243, 129, 129) 100%
-  );
-  background-color: -webkit-linear-gradient(
-    90deg,
-    rgba(252, 227, 138, 0.9) 0%,
-    rgba(243, 129, 129, 0.9) 100%
-  );
-  background-color: -ms-linear-gradient(
-    90deg,
-    rgba(252, 227, 138, 0.9) 0%,
-    rgba(243, 129, 129, 0.9) 100%
+  z-index: 1;
+  background: rgb(252, 227, 138);
+  background: linear-gradient(
+    0deg,
+    rgba(252, 227, 138, 0.9) 35%,
+    rgba(243, 129, 129, 1) 100%
   );
   width: 380px;
   height: 470px;
